@@ -105,27 +105,37 @@
             <h3 class="mb-2"><span class="text-primary">2022</span></h3>
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="flex-grow-1">
-                    <h3 class="mb-0">Think Twice: Measuring the Efficiency of Eliminating Model Biases in Question Answering</h3>
-                    <div class="lead mb-3">Under review, <a
-                            href="https://openreview.net/pdf?id=Sp7FydWipmaM">available
+                    <h3 class="mb-0">What is Not in the Context? Evaluation of Few-shot Learners with Informative Demonstrations</h3>
+                    <div class="lead mb-3">Pre-print <a
+                            href="https://arxiv.org/abs/2212.01692">available
                         here</a></div>
-                    <p>We introduce a framework for finer-grained analysis of discovered model biases and measure the
-                        significance of some previously-reported biases while uncovering several new ones.
-                        The bias-level metric allows us to assess how well different pre-trained models and
-                        state-of-the-art debiasing methods mitigate the identified biases in Question Answering (QA) and
-                        compare their results to a resampling baseline.
-                        We find cases where bias mitigation hurts OOD performance and,
-                        on the contrary, when bias enlargement corresponds to improvements in OOD,
-                        suggesting that some biases are shared among QA datasets and motivating future work to refine
-                        the analyses of LLMs' robustness.
+                    <p>We argue that the commonly-used evaluation settings of few-shot models utilizing
+                        a random selection of in-context demonstrations is not able to disentangle models'
+                        ability to learn new skills from demonstrations, as most of the such-selected demonstrations
+                        are not informative for prediction beyond exposing the new task's input and output distribution.
+                        Therefore, we introduce an evaluation technique that disentangles few-shot learners' gain
+                        from in-context learning by picking the demonstrations sharing a specific,
+                        informative concept with the predicted sample, in addition to the performance reached
+                        by mainly non-informative samples. We find that regardless of the model size, existing few-shot
+                        learners are not able to benefit from observing such informative concepts in demonstrations.
                     </p>
                 </div>
             </div>
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="flex-grow-1">
-                    <h3 class="mb-0">Alignment-Based Objectives for Robust Adaptation in Machine Translation</h3>
+                    <h3 class="mb-0">Think Twice: Measuring the Efficiency of Eliminating Prediction Shortcuts of Question Answering Models</h3>
                     <div class="lead mb-3">Under review, <a
-                            href="https://openreview.net/pdf?id=qy6ILKkM4Jh">available
+                            href="https://openreview.net/forum?id=8GkrxUgjg0">available
+                        here</a></div>
+                    <p>We propose a framework for measuring a scale of models' reliance on any identified spurious feature and measure the size of such reliance for some previously-reported features while uncovering several new ones. We assess the robustness towards a large set of known and new-found prediction biases for a variety of pre-trained models and state-of-the-art debiasing methods in Question Answering (QA) and compare it to a resampling baseline. We find that (i) the observed OOD gains of debiasing methods can not be explained by mitigation or enlargement of the addressed bias and subsequently evaluate that (ii) the biases are vastly shared among QA datasets. Our findings motivate future work to refine the reports of LLMs' robustness to a level of specific spurious correlations.
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Soft Alignment Objectives for Robust Adaptation in Machine Translation</h3>
+                    <div class="lead mb-3">Pre-print, <a
+                            href="https://arxiv.org/abs/2211.16550">available
                         here</a></div>
                     <p>The traditional adaptation by continuous in-domain training weakens the model's ability to
                         generalize to other domains, making the open-ended deployment of these models prone to errors.
@@ -480,7 +490,7 @@
             <div class="d-flex flex-column flex-md-row justify-content-between">
                 <div class="flex-grow-1">
                     <h3 class="mb-0">Reviewer</h3>
-                    <div class="subheading mb-3">*ACL Conferences & others</div>
+                    <div class="subheading mb-3">*ACL Conferences, ACL Rolling Review & other</div>
                     <p>I give back to the community by volunteering for reviewing, proofreading and providing feedback
                         to other researchers whenever it can help. Feel free to get in touch if you're interested!
                         <br></br>
@@ -497,11 +507,11 @@
         <div class="resume-section-content">
             <h2 class="mb-5">Away From Keyboard</h2>
             <br></br>
-            <br>Reading the most recent pre-prints is fun, but the world also has a lot of other great stuff to see and
+            <br>Reading the most recent pre-prints is fun, but there's a lot of other great stuff to see and
             do.</br>
             <br>Whenever possible, I love spending time moving with unlimited open space ☁ ⬆ above my head, best done on
             a
-            bike 🚲 or skis ⛷, with far mountain views ⛰☀️ and a taste of a cold brew ☕ .</br>
+            bike 🚲 or skis ⛷, with far mountain views ⛰☀️ and a taste of a filtered brew ☕ .</br>
         </div>
 
 
