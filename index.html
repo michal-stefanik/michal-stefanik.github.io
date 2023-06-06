@@ -99,16 +99,16 @@
     <section class="resume-section" id="publications">
         <div class="resume-section-content">
             <h2 class="mb-5">Publications</h2>
-            <p>Here's a selection of recent publications I have conducted or significantly contributed to.
+            <p>Here's a selection of recent publications from my research that I authored or co-authored.
             </p>
             </br>
-            <h3 class="mb-2"><span class="text-primary">2022</span></h3>
+            <h3 class="mb-2"><span class="text-primary">2023</span></h3>
+
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="flex-grow-1">
-                    <h3 class="mb-0">What is Not in the Context? Evaluation of Few-shot Learners with Informative Demonstrations</h3>
-                    <div class="lead mb-3">Pre-print <a
-                            href="https://arxiv.org/abs/2212.01692">available
-                        here</a></div>
+                    <h3 class="mb-0">Can In-context Learners Learn a Reasoning Concept from Demonstrations?</h3>
+                    <div class="subheading mb-3"><span class="text-primary">Michal Štefánik</span>, Marek Kadlčík</div>
+                    <div class="lead mb-3">In <a href="https://arxiv.org/abs/2212.01692">Proceedings of ACL 2023 NLRSE workshop</a></div>
                     <p>We argue that the commonly-used evaluation settings of few-shot models utilizing
                         a random selection of in-context demonstrations is not able to disentangle models'
                         ability to learn new skills from demonstrations, as most of the such-selected demonstrations
@@ -117,26 +117,16 @@
                         from in-context learning by picking the demonstrations sharing a specific,
                         informative concept with the predicted sample, in addition to the performance reached
                         by mainly non-informative samples. We find that regardless of the model size, existing few-shot
-                        learners are not able to benefit from observing such informative concepts in demonstrations.
+                        learners can not consistently benefit from observing such informative concepts in demonstrations.
                     </p>
                 </div>
             </div>
+
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="flex-grow-1">
-                    <h3 class="mb-0">Think Twice: Measuring the Efficiency of Eliminating Prediction Shortcuts of Question Answering Models</h3>
-                    <div class="lead mb-3">Under review, <a
-                            href="https://openreview.net/forum?id=8GkrxUgjg0">available
-                        here</a></div>
-                    <p>We propose a framework for measuring a scale of models' reliance on any identified spurious feature and measure the size of such reliance for some previously-reported features while uncovering several new ones. We assess the robustness towards a large set of known and new-found prediction biases for a variety of pre-trained models and state-of-the-art debiasing methods in Question Answering (QA) and compare it to a resampling baseline. We find that (i) the observed OOD gains of debiasing methods can not be explained by mitigation or enlargement of the addressed bias and subsequently evaluate that (ii) the biases are vastly shared among QA datasets. Our findings motivate future work to refine the reports of LLMs' robustness to a level of specific spurious correlations.
-                    </p>
-                </div>
-            </div>
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">Soft Alignment Objectives for Robust Adaptation in Machine Translation</h3>
-                    <div class="lead mb-3">Pre-print, <a
-                            href="https://arxiv.org/abs/2211.16550">available
-                        here</a></div>
+                    <h3 class="mb-0">Soft Alignment Objectives for Robust Adaptation of Language Generation</h3>
+                    <div class="subheading mb-3"><span class="text-primary">Michal Štefánik</span>, Marek Kadlčík, Petr Sojka</div>
+                    <div class="lead mb-3">In <a href="https://arxiv.org/abs/2211.16550">Proceedings of the 61th Annual Meeting of the ACL (ACL 2023): Main track</a></div>
                     <p>The traditional adaptation by continuous in-domain training weakens the model's ability to
                         generalize to other domains, making the open-ended deployment of these models prone to errors.
                         This work introduces two novel objectives, grounded in a semantic similarity of the generating
@@ -149,12 +139,44 @@
                         objectives.</p>
                 </div>
             </div>
+
+
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Think Twice: Measuring the Efficiency of Eliminating Prediction Shortcuts of Question Answering Models</h3>
+                    <div class="subheading mb-3">Lukáš Mikula, <span class="text-primary">Michal Štefánik</span> (equal), Marek Petrovič, Petr Sojka</div>
+                    <div class="lead mb-3">Accepted through ARR, to appear at a *ACL conference; <a href="https://arxiv.org/abs/2305.06841">pre-print</a></div>
+                    <p>We propose a framework for measuring a scale of models' reliance on any identified spurious feature and measure the size of such reliance for some previously-reported features while uncovering several new ones. We assess the robustness towards a large set of known and new-found prediction biases for a variety of pre-trained models and state-of-the-art debiasing methods in Question Answering (QA) and compare it to a resampling baseline. We find that (i) the observed OOD gains of debiasing methods can not be explained by mitigation or enlargement of the addressed bias and subsequently evaluate that (ii) the biases are vastly shared among QA datasets. Our findings motivate future work to refine the reports of LLMs' robustness to a level of specific spurious correlations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Resources and Few-shot Learners for In-context Learning in Slavic Languages</h3>
+                    <div class="subheading mb-3"><span class="text-primary">Michal Štefánik</span>, Marek Kadlčík</div>
+                    <div class="lead mb-3">In <a href="https://aclanthology.org/2023.bsnlp-1.12/">Proceedings of EACL SlavicNLP 2023 workshop</a> · 🥇 Best paper award</div>
+                    <p>In this work, we collect the infrastructure necessary for training and evaluation of ICL
+                        in a selection of Slavic languages: Czech, Polish, and Russian. We link a diverse set of
+                        datasets and cast these into a unified instructional format through a set of transformations
+                        and newly-crafted templates written purely in target languages.Using the newly-curated dataset,
+                        we evaluate a set of the most recent in-context learners and compare their results to the
+                        supervised baselines. Finally, we train, evaluate and publish a set of in-context learning models.
+                        We find that the massive multitask training can be outperformed by single-task training in the
+                        target language, uncovering the potential for specializing in-context learners to the language(s) of their application.
+
+                    </p>
+                </div>
+            </div>
+
+
+            <h3 class="mb-2"><span class="text-primary">2022</span></h3>
+           <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="flex-grow-1">
                     <h3 class="mb-0">Methods for Estimating and Improving Robustness of Language Models</h3>
                     <div class="subheading mb-3"><span class="text-primary">Michal Štefánik</span></div>
                     <div class="lead mb-3">In <a href="https://aclanthology.org/2022.naacl-srw.6/">Proceedings of 2022
-                        Annual Conference of the NAACL: SRW</a></div>
+                        Annual Conference of the NAACL: SRW workshop</a></div>
                     <p>Despite their outstanding performance, large language models (LLMs) suffer notorious flaws
                         related to their preference for simple, surface-level textual relations over full semantic
                         complexity of the problem. This proposal investigates a common denominator of this problem in
