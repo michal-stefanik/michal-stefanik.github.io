@@ -99,16 +99,69 @@
     <section class="resume-section" id="publications">
         <div class="resume-section-content">
             <h2 class="mb-5">Publications</h2>
-            <p>Here's a selection of recent publications from my research that I authored or co-authored.
+            <p>Below you can find the most recent publications of my research.
             </p>
             </br>
             <h3 class="mb-2"><span class="text-primary">2023</span></h3>
 
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="flex-grow-1">
+                    <h3 class="mb-0">Concept-aware Training Improves In-context Learning Ability of Language Models</h3>
+                    <!--                    <div class="subheading mb-3"><span class="text-primary">Michal Štefánik</span>, Marek Kadlčík</div>-->
+                    <div class="lead mb-3">Under review, pre-print <a
+                            href="https://drive.google.com/file/d/1pPZdP4ccJ_S7NmbKaCcKATbV_s6i6cFu/view?usp=sharing">available
+                        here</a>.
+                    </div>
+                    <p>Previous work curating in-context learning models assumes that ICL emerges from vast
+                        over-parametrization or
+                        the scale of multi-task training. However, recent theoretical work
+                        attributes ICL emergence to specific properties of training data and creates functional
+                        in-context learners in small-scale, synthetic settings.
+
+                        Inspired by these findings, we propose a Concept-aware Training (CoAT) method
+                        constructing training scenarios such that it is beneficial for the LM to capture the
+                        analogical reasoning concepts. We measure that data sampling of CoAT
+                        consistently improves models' ICL on unseen reasoning tasks, making the in-context
+                        learners trained with CoAT on only two QA datasets to perform
+                        comparably to models trained on over 1600 tasks.
+                        Our analyses attribute some of CoAT's empirical improvements to an enhanced ability to
+                        benefit from natural concepts in demonstrations and to mitigation of models' over-reliance on
+                        their learned semantic priors.
+                    </p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Calc-X: Enriching Arithmetical Chain-of-Thoughts Datasets by Interaction with
+                        Symbolic Systems</h3>
+                    <!--                    <div class="subheading mb-3"><span class="text-primary">Michal Štefánik</span>, Marek Kadlčík</div>-->
+                    <div class="lead mb-3">Under review, pre-print <a
+                            href="https://drive.google.com/file/d/18XwPXO0dgudX8FiAMAo60w5n-0PUsADa/view?usp=sharing">available
+                        here</a>.
+                    </div>
+                    <p>Language models are notoriously
+                        inclined to make factual errors in tasks requiring arithmetic reasoning.
+                        To enable language models to circumvent this deficiency and offload critical computation to a
+                        symbolic system, we create a collection of Calc-X datasets that demonstrate the appropriate use
+                        of a calculator in reasoning chains.
+                        We survey and unify several existing chain-of-thought datasets into a proposed novel format,
+                        resulting in a standard collection of over 300,000 samples requiring arithmetic reasoning.
+                        Finally, we use the new collection to train open-source calculator-assisted language models and
+                        show that models trained on Calc-X almost double the accuracy of generating correct results
+                        compared to baselines.
+                        We make all Calc-X datasets and models <a href="https://huggingface.co/emnlp2023">publicly available</a>.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
                     <h3 class="mb-0">Can In-context Learners Learn a Reasoning Concept from Demonstrations?</h3>
                     <div class="subheading mb-3"><span class="text-primary">Michal Štefánik</span>, Marek Kadlčík</div>
-                    <div class="lead mb-3">In <a href="https://arxiv.org/abs/2212.01692">Proceedings of ACL 2023 NLRSE workshop</a></div>
+                    <div class="lead mb-3">In <a href="https://arxiv.org/abs/2212.01692">Proceedings of ACL 2023 NLRSE
+                        workshop</a></div>
                     <p>We argue that the commonly-used evaluation settings of few-shot models utilizing
                         a random selection of in-context demonstrations is not able to disentangle models'
                         ability to learn new skills from demonstrations, as most of the such-selected demonstrations
@@ -117,7 +170,8 @@
                         from in-context learning by picking the demonstrations sharing a specific,
                         informative concept with the predicted sample, in addition to the performance reached
                         by mainly non-informative samples. We find that regardless of the model size, existing few-shot
-                        learners can not consistently benefit from observing such informative concepts in demonstrations.
+                        learners can not consistently benefit from observing such informative concepts in
+                        demonstrations.
                     </p>
                 </div>
             </div>
@@ -125,8 +179,11 @@
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="flex-grow-1">
                     <h3 class="mb-0">Soft Alignment Objectives for Robust Adaptation of Language Generation</h3>
-                    <div class="subheading mb-3"><span class="text-primary">Michal Štefánik</span>, Marek Kadlčík, Petr Sojka</div>
-                    <div class="lead mb-3">In <a href="https://arxiv.org/abs/2211.16550">Proceedings of the 61th Annual Meeting of the ACL (ACL 2023): Main track</a></div>
+                    <div class="subheading mb-3"><span class="text-primary">Michal Štefánik</span>, Marek Kadlčík, Petr
+                        Sojka
+                    </div>
+                    <div class="lead mb-3">In <a href="https://arxiv.org/abs/2211.16550">Proceedings of the 61th Annual
+                        Meeting of the ACL (ACL 2023): Main track</a></div>
                     <p>The traditional adaptation by continuous in-domain training weakens the model's ability to
                         generalize to other domains, making the open-ended deployment of these models prone to errors.
                         This work introduces two novel objectives, grounded in a semantic similarity of the generating
@@ -143,10 +200,22 @@
 
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="flex-grow-1">
-                    <h3 class="mb-0">Think Twice: Measuring the Efficiency of Eliminating Prediction Shortcuts of Question Answering Models</h3>
-                    <div class="subheading mb-3">Lukáš Mikula, <span class="text-primary">Michal Štefánik</span> (equal), Marek Petrovič, Petr Sojka</div>
-                    <div class="lead mb-3">Accepted through ARR, to appear at a *ACL conference; <a href="https://arxiv.org/abs/2305.06841">pre-print</a></div>
-                    <p>We propose a framework for measuring a scale of models' reliance on any identified spurious feature and measure the size of such reliance for some previously-reported features while uncovering several new ones. We assess the robustness towards a large set of known and new-found prediction biases for a variety of pre-trained models and state-of-the-art debiasing methods in Question Answering (QA) and compare it to a resampling baseline. We find that (i) the observed OOD gains of debiasing methods can not be explained by mitigation or enlargement of the addressed bias and subsequently evaluate that (ii) the biases are vastly shared among QA datasets. Our findings motivate future work to refine the reports of LLMs' robustness to a level of specific spurious correlations.
+                    <h3 class="mb-0">Think Twice: Measuring the Efficiency of Eliminating Prediction Shortcuts of
+                        Question Answering Models</h3>
+                    <div class="subheading mb-3">Lukáš Mikula, <span class="text-primary">Michal Štefánik</span>
+                        (equal), Marek Petrovič, Petr Sojka
+                    </div>
+                    <div class="lead mb-3">Accepted through ARR, to appear at a *ACL conference; <a
+                            href="https://arxiv.org/abs/2305.06841">pre-print</a></div>
+                    <p>We propose a framework for measuring a scale of models' reliance on any identified spurious
+                        feature and measure the size of such reliance for some previously-reported features while
+                        uncovering several new ones. We assess the robustness towards a large set of known and new-found
+                        prediction biases for a variety of pre-trained models and state-of-the-art debiasing methods in
+                        Question Answering (QA) and compare it to a resampling baseline. We find that (i) the observed
+                        OOD gains of debiasing methods can not be explained by mitigation or enlargement of the
+                        addressed bias and subsequently evaluate that (ii) the biases are vastly shared among QA
+                        datasets. Our findings motivate future work to refine the reports of LLMs' robustness to a level
+                        of specific spurious correlations.
                     </p>
                 </div>
             </div>
@@ -154,16 +223,22 @@
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="flex-grow-1">
                     <h3 class="mb-0">Resources and Few-shot Learners for In-context Learning in Slavic Languages</h3>
-                    <div class="subheading mb-3"><span class="text-primary">Michal Štefánik</span>, Marek Kadlčík</div>
-                    <div class="lead mb-3">In <a href="https://aclanthology.org/2023.bsnlp-1.12/">Proceedings of EACL SlavicNLP 2023 workshop</a> · 🥇 Best paper award</div>
+                    <div class="subheading mb-3"><span class="text-primary">Michal Štefánik</span>, Marek Kadlčík, Piotr
+                        Gramacki, Petr Sojka
+                    </div>
+                    <div class="lead mb-3">In <a href="https://aclanthology.org/2023.bsnlp-1.12/">Proceedings of EACL
+                        SlavicNLP 2023 workshop</a> · 🥇 Best paper award
+                    </div>
                     <p>In this work, we collect the infrastructure necessary for training and evaluation of ICL
                         in a selection of Slavic languages: Czech, Polish, and Russian. We link a diverse set of
                         datasets and cast these into a unified instructional format through a set of transformations
                         and newly-crafted templates written purely in target languages.Using the newly-curated dataset,
                         we evaluate a set of the most recent in-context learners and compare their results to the
-                        supervised baselines. Finally, we train, evaluate and publish a set of in-context learning models.
+                        supervised baselines. Finally, we train, evaluate and publish a set of in-context learning
+                        models.
                         We find that the massive multitask training can be outperformed by single-task training in the
-                        target language, uncovering the potential for specializing in-context learners to the language(s) of their application.
+                        target language, uncovering the potential for specializing in-context learners to the
+                        language(s) of their application.
 
                     </p>
                 </div>
@@ -171,12 +246,12 @@
 
 
             <h3 class="mb-2"><span class="text-primary">2022</span></h3>
-           <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="flex-grow-1">
                     <h3 class="mb-0">Methods for Estimating and Improving Robustness of Language Models</h3>
                     <div class="subheading mb-3"><span class="text-primary">Michal Štefánik</span></div>
-                    <div class="lead mb-3">In <a href="https://aclanthology.org/2022.naacl-srw.6/">Proceedings of 2022
-                        Annual Conference of the NAACL: SRW workshop</a></div>
+                    <div class="lead mb-3">In <a href="https://aclanthology.org/2022.naacl-srw.6/">Proceedings of NAACL
+                        2022: SRW workshop</a></div>
                     <p>Despite their outstanding performance, large language models (LLMs) suffer notorious flaws
                         related to their preference for simple, surface-level textual relations over full semantic
                         complexity of the problem. This proposal investigates a common denominator of this problem in
@@ -277,28 +352,6 @@
                         sizes.</p>
                 </div>
             </div>
-
-            <h3 class="mb-2"><span class="text-primary">2020</span></h3>
-
-
-            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="flex-grow-1">
-                    <h3 class="mb-0">Text classification with word embedding regularization and soft similarity
-                        measure</h3>
-                    <div class="subheading mb-3">Vít Novotný, Eniafe Festus Ayetiran, <span class="text-primary">Michal Štefánik</span>,
-                        Petr Sojka
-                    </div>
-                    <div class="lead mb-3">In <a href="https://arxiv.org/pdf/2003.05019.pdf">ArXiv</a></div>
-                    <p>In our work, we investigate the individual and joint effect of the word embedding regularization
-                        techniques on the document processing speed and the task performance of the SCM and the WMD on
-                        text classification. For evaluation, we use the kNN classifier and six standard datasets:
-                        BBCSPORT, TWITTER, OHSUMED, REUTERS-21578, AMAZON, and 20NEWS. We show 39% average kNN test
-                        error reduction with regularized word embeddings compared to non-regularized word embeddings. We
-                        describe a practical procedure for deriving such regularized embeddings through Cholesky
-                        factorization. We also show that the SCM with regularized word embeddings significantly
-                        outperforms the WMD on text classification and is over 10,000× faster.</p>
-                </div>
-            </div>
         </div>
     </section>
     <hr class="m-0"/>
@@ -372,19 +425,59 @@
         <div class="resume-section-content">
             <h2 class="mb-5">Talks</h2>
 
-            <h3 class="mb-0">Learning to Learn: Training Language Models to Understand Tasks from Few Examples</h3>
-            <div class="subheading mb-3"><span class="text-primary">Community talk: Machine Learning MeetUp Brno, October 2022 (Offline)</span>
+
+            <h3 class="mb-0">Soft Alignment Objectives for Robust Adaptation of Language Generation</h3>
+            <div class="subheading mb-3"><span class="text-primary">ACL 2023 conference in Toronto, Canada, July 2023</span>
                 <br></br>
-                <p>Informal presentation of our methodology and trained models for Few-shot in Czech and other Non-English languages.<br>
-                    <a href="https://michal-stefanik.medium.com/few-shot-learning-goes-multilingual-9837b2962901">Medium Blog</a> &
-                    <a href="https://www.facebook.com/events/6396221753725366/?active_tab=about">Event</a> &
-                    <a href="https://drive.google.com/file/d/1xO7V0AmE57eH4FAoH517XZPQ0_DtOoby/view?usp=sharing">Presentation with links</a> &
-                    <a href="https://huggingface.co/gaussalgo/mt5-large-priming-QA_en-cs">HuggingFace models</a>.</p>
+                <p>A 6 min exposition of our ACL paper proposing more robust training objectives for language generation.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YWHGuichMCA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                <br></br>
+            </div>
+
+            <h3 class="mb-0">Learning to Learn: Hands-on Tutorial in Using and Improving Few-shot Language Models</h3>
+            <div class="subheading mb-3"><span class="text-primary">Workshop on Machine Learning Prague conference, in Prague, Czechia, June 2023</span>
+                <br></br>
+                <p>Organisation of the workshop covering most recent topics with hands-on tutorials in in-context learning.<br>
+                    <a href="https://github.com/gaussalgo/L2L_MLPrague23">Workshop github</a> &
+                    <a href="https://github.com/gaussalgo/L2L_MLPrague23/blob/main/presentation.pdf">Presentation slides</a> with links to the literature.</p>
                 <img alt="MLMU Cover Photo"
-                     src="https://secure.meetupstatic.com/photos/event/3/2/6/9/highres_507252905.jpeg" loading="eager"
+                     src="assets/img/mlprague.jpeg" loading="eager"
                      class="rounded-full object-cover" style="width: 560px; height: 315px;">
                 <br></br>
             </div>
+
+
+            <h3 class="mb-0">Resources and Few-shot Learners for In-context Learning in Slavic Languages</h3>
+            <div class="subheading mb-3"><span class="text-primary">EACL 2023: Slavic NLP workshop in Dubrovnik, Croatia, May 2023 · 🥇 Best paper award</span>
+                <br></br>
+                <p>A 10 min overview of our work in building and evaluating in-context learning in Slavic languages.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Sun2FhQTQZI"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                <br></br>
+            </div>
+
+            <h3 class="mb-0">Learning to Learn: Training Language Models to Understand Tasks from Few Examples</h3>
+            <div class="subheading mb-3"><span class="text-primary">Community talk: Machine Learning MeetUp Brno, October 2022 (Offline)</span>
+                <br></br>
+                <p>Informal presentation of our methodology and trained models for Few-shot in Czech and other
+                    Non-English languages.<br>
+                    <a href="https://michal-stefanik.medium.com/few-shot-learning-goes-multilingual-9837b2962901">Medium
+                        Blog</a> &
+                    <a href="https://www.facebook.com/events/6396221753725366/?active_tab=about">Event</a> &
+                    <a href="https://drive.google.com/file/d/1xO7V0AmE57eH4FAoH517XZPQ0_DtOoby/view?usp=sharing">Presentation
+                        with links</a> &
+                    <a href="https://huggingface.co/gaussalgo/mt5-large-priming-QA_en-cs">HuggingFace models</a>.</p>
+                <img alt="MLMU Cover Photo"
+                     src="assets/img/mlmu.jpeg" loading="eager"
+                     class="rounded-full object-cover" style="width: 560px; height: 315px;">
+                <br></br>
+            </div>
+
 
             <h3 class="mb-0">Mitigating Biases of QA Models by Simple Resampling Methods</h3>
             <div class="subheading mb-3"><span class="text-primary">2022 Annual Conference of the NAACL: DADC Workshop, July 2022</span>
@@ -401,9 +494,9 @@
 
             <h3 class="mb-0">Methods for Estimating and Improving Robustness of Language Models</h3>
             <div class="subheading mb-3"><span
-                    class="text-primary">2022 Annual Conference of the NAACL: SRW, July 2022</span>
+                    class="text-primary">NAACL 2022: SRW workshop, July 2022</span>
                 <br></br>
-                <p>A 5min talk given with the thesis proposal presented on NAACL 2022 SRW in Seattle.</p>
+                <p>A 5min talk covering my thesis proposal presented on NAACL 2022 SRW in Seattle.</p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/dTltkOXeeyk"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
