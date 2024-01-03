@@ -30,7 +30,7 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Research</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#talks">Talks</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#other">Other</a></li>
@@ -98,7 +98,7 @@
     <!-- Experience-->
     <section class="resume-section" id="publications">
         <div class="resume-section-content">
-            <h2 class="mb-5">Publications</h2>
+            <h2 class="mb-5">Research</h2>
             <p>Below you can find references to my most recent publications.
             </p>
             </br>
@@ -317,7 +317,8 @@
                         Sojka
                     </div>
                     <div class="lead mb-3">In <a href="https://aclanthology.org/2021.wmt-1.112/">Proceedings of the
-                        Sixth Conference on Machine Translation (WMT)</a></div>
+                        Sixth Conference on Machine Translation (WMT)</a>
+                        · 🥇 <a href="https://aclanthology.org/2021.wmt-1.73v3.pdf#page=10">Best-performing</a> reference-free metric</div>
                     <p>This work introduces a simple regressive ensemble for evaluating machine translation quality
                         based on a set of novel and established metrics. We evaluate the ensemble using a correlation to
                         expert-based MQM scores of the WMT 2021 Metrics workshop. In both monolingual and zero-shot
@@ -331,24 +332,29 @@
 
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="flex-grow-1">
-                    <h3 class="mb-0">One Size Does Not Fit All: Finding the Optimal Subword Sizes for FastText Models
-                        across Languages</h3>
-                    <div class="subheading mb-3">Vít Novotný, Eniafe Festus Ayetiran, Dalibor Bačovský, Dávid Lupták,
-                        <span class="text-primary">Michal Štefánik</span>, Petr Sojka
+                    <h3 class="mb-0">Ensembling Ten Math Information Retrieval Systems: MIRMU and MSM @ ARQMath 2021</h3>
+                    <div class="subheading mb-3">Vít Novotný,
+                        <span class="text-primary">Michal Štefánik</span>, Dávid Lupták, Martin Geletka, Petr Sojka
                     </div>
-                    <div class="lead mb-3">In <a href="https://aclanthology.org/2021.ranlp-1.120/">Proceedings of the
-                        International Conference on Recent Advances in NLP (RANLP 2021)</a></div>
-                    <p>In our work, we find the optimal subword sizes on the English, German, Czech, Italian, Spanish,
-                        French, Hindi, Turkish, and Russian word analogy tasks. We then propose a simple n-gram coverage
-                        model and we show that it predicts better-than-default subword sizes on the Spanish, French,
-                        Hindi, Turkish, and Russian word analogy tasks. We show that the optimization of fastText’s
-                        subword sizes matters and results in a 14% improvement on the Czech word analogy task. We also
-                        show that expensive parameter optimization can be replaced by a simple n-gram coverage model
-                        that consistently improves the accuracy of fastText models on the word analogy tasks by up to 3%
-                        compared to the default subword sizes, and that it is within 1% accuracy of the optimal subword
-                        sizes.</p>
+                    <div class="lead mb-3">In <a href="https://ceur-ws.org/Vol-2936/paper-06.pdf">
+                        CLEF Lab on Answer Retrieval for Questions on Math (ARQMath@CLEF 2021)</a>
+                    · 🥇 <a href="https://ceur-ws.org/Vol-3180/paper-01.pdf#page=24">Best</a> automatic CQA system</div>
+
+                    <p>ARQMath Community Question Answering (CQA) competition challenges open-domain QA systems to find answers to a set of
+                        yet non-answered questions on Math Stack Exchange, potentially enabling
+                        automated retrieval of responses to already-answered questions,
+                        and thus minimising unnecessary workload.
+                        In our submission, we create an ensemble of ten “weak” individual systems
+                        that we let vote to provide answers to unseen questions. Our submission, a best-performing among
+                        all the automated systems, shows that such ensemble approach can be more robust
+                        on unseen questions than single-model neural systems.
+
+                    </p>
                 </div>
             </div>
+
+
+
         </div>
     </section>
     <hr class="m-0"/>
