@@ -111,23 +111,22 @@
                 <div class="flex-grow-1">
                     <h3 class="mb-0">Concept-aware Data Construction Improves In-context Learning of Language Models</h3>
                     <!--                    <div class="subheading mb-3"><span class="text-primary">Michal Štefánik</span>, Marek Kadlčík</div>-->
-                    <div class="lead mb-3">In Findings of ACL 2024 (to appear; <a
-                            href="https://arxiv.org/abs/2403.09703">preprint</a>).
+                    <div class="lead mb-3">To appear in Findings of ACL 2024 · <a href="https://arxiv.org/abs/2403.09703">Pre-print</a>
+                        · 📄 <a href="https://michal-stefanik.medium.com/what-makes-a-language-model-to-understand-your-instruction-d0ce384930a2">Blog post</a>.
                     </div>
                     <p>Previous work curating in-context learning models assumes that ICL emerges from vast
                         over-parametrization or
-                        the scale of multitask training. However, recent theoretical work
+                        the scale of multitask training. However, theoretical work
                         attributes ICL emergence to specific properties of training data and creates functional
                         in-context learners in small-scale, synthetic settings.
-
-                        Inspired by these findings, we propose a Concept-aware Training (CoAT) method
-                        constructing training scenarios such that it is beneficial for the LM to capture the
-                        analogical reasoning concepts. We measure that data sampling of CoAT
-                        consistently improves models' ICL on unseen reasoning tasks, making the in-context
-                        learners trained with CoAT on only two QA datasets to perform
-                        comparably to models trained on over 1600 tasks.
-                        Our analyses attribute some of CoAT's empirical improvements to an enhanced ability to
-                        benefit from natural concepts in demonstrations and to mitigation of models' over-reliance on
+                    </p>
+                    <p>
+                        We propose a method to construct training data that upsample these properties. We show the
+                        superior efficiency of training on such data, with resulting models significantly outperforming
+                        traditional instruction tuning in 41 and 45 out of 60 tasks, while performing comparably to previous
+                        models trained on over 1600 tasks while using only two (2) QA tasks.
+                        Our analyses attribute these improvements to enhanced ability of our in-context learners to
+                        benefit from latent reasoning concepts presented in demonstrations and to mitigation of models' over-reliance on
                         their learned semantic priors.
                     </p>
                 </div>
@@ -141,15 +140,14 @@
                     </div>
                     <div class="lead mb-3">In <a href="https://arxiv.org/abs/2305.06841">Proceedings of EACL 2024: Main track</a> · 🥇 Best submission in NAACL DADC: <a href="https://dadcworkshop.github.io/shared-task/">Better training data</a> challenge</div>
 <!--                    <div class="lead mb-3"></div>-->
-                    <p>We propose a framework for measuring a scale of models' reliance on any identified spurious
-                        feature and measure the size of such reliance for some previously-reported features while
-                        uncovering several new ones. We assess the robustness towards a large set of known and new-found
-                        prediction biases for a variety of pre-trained models and state-of-the-art debiasing methods in
-                        Question Answering (QA) and compare it to a resampling baseline. We find that (i) the observed
-                        OOD gains of debiasing methods can not be explained by mitigation or enlargement of the
-                        addressed bias and subsequently evaluate that (ii) the biases are vastly shared among QA
-                        datasets. Our findings motivate future work to refine the reports of LLMs' robustness to a level
-                        of specific spurious correlations.
+                    <p>In this paper, we challenge the commonly-used evaluation of robustness of language models through
+                        the lens of their out-of-distribution performance. We propose a metric to measure the reliance of
+                        model's performance on a specific feature and measure the reliance on a set of features identified as
+                        prediction shortcuts. We find that the same prediction shortcuts are exposed in all assessed QA datasets,
+                        whereas some shortcuts identified in SQuAD are even more impactful in other datasets.
+                        This means that counterintuitively, a model relying on shortcut more might reach better OOD performance.
+                        Finally, we survey three existing debiasing methods and find that indeed, the OOD gains of these methods
+                        come in hand with increased, rather than decreased reliance on fragile prediction shortcuts.
                     </p>
                     <p><a href="#talks">Conference talk ⬇️</a>️</p>
                 </div>
@@ -167,18 +165,19 @@
                     </div>
                     <p>Language models are notoriously
                         inclined to make factual errors in tasks requiring arithmetic reasoning.
-                        To enable language models to circumvent this deficiency and offload critical computation to a
+                        To enable language models to circumvent this deficiency and offload a critical computation to a
                         symbolic system, we create a collection of Calc-X datasets that demonstrate the appropriate use
                         of a calculator in reasoning chains.
                         We survey and unify several existing chain-of-thought datasets into a proposed novel format,
                         resulting in a standard collection of over 300,000 samples requiring arithmetic reasoning.
                         Finally, we use the new collection to train open-source calculator-assisted language models and
                         show that models trained on Calc-X almost double the accuracy of generating correct results
-                        compared to baselines.
+                        compared to baselines, and can outperform larger models of previous work, such as Toolformer, or Llama 2.
                         We make all Calc-X <a href="https://huggingface.co/collections/MU-NLPC/calc-x-652fee9a6b838fd820055483">datasets</a>
                         and <a href="https://huggingface.co/collections/MU-NLPC/calcformers-65367392badc497807b3caf5">models</a>
                         publicly available</a>.
                     </p>
+                    <p>Link to <a href="https://aclanthology.org/2023.emnlp-main.742.mp4">Marek's Conference talk 🎥</a></p>
                 </div>
             </div>
 
@@ -190,9 +189,9 @@
                     <div class="lead mb-3">In <a href="https://arxiv.org/abs/2212.01692">Proceedings of ACL 2023 Natural Language Reasoning (NLRSE) workshop</a> · 🥇 Best paper award</div>
                     <p>Recent work analysing the functioning of in-context learners show that instead of learning new associations from the input,
                         models largely rely on their pre-trained knowledge, such as the sentiment of the labels.
-                        We argue that the in-context learning evaluations using a random demonstrations can not disentangle models' reliance on such features,
-                        as random demonstrations rarely present functional relations useful for prediction.
-                        Hence, we propose to evaluate in-context learners with demonstrations sharing with predicted sample a specific, informative reasoning concept, which we extract from human explanations.
+                        We argue that evaluations using a randomly-chosen demonstrations can not disentangle models' reliance on pre-trained knowledge
+                        from the ability to learn new functional relations, as most of such demonstrations can provide only limited information.
+                        Hence, we propose to evaluate in-context learners with demonstrations sharing a specific, informative reasoning concept with predicted sample.
                         We find that most of the recent in-context learners can not consistently benefit from the demonstrated concepts, irrespective of the model size.
                         However, some models are more sensitive to concepts than others, such as T0 models, which can benefit from concepts in 7 of 8 evaluation scenarios.
                     </p>
@@ -206,17 +205,14 @@
                         Sojka
                     </div>
                     <div class="lead mb-3">In <a href="https://aclanthology.org/2023.acl-long.492">Proceedings of the 61th Annual
-                        Meeting of the ACL (ACL 2023): Main track</a></div>
-                    <p>The traditional adaptation by continuous in-domain training weakens the model's ability to
-                        generalize to other domains, making the open-ended deployment of these models prone to errors.
-                        This work introduces two novel objectives, grounded in a semantic similarity of the generating
-                        hypothesis to the reference. We show that (1) grounding of the training signal in semantic
-                        similarity can mitigate the catastrophic forgetting of domain adaptation, while (2) in many
-                        cases improving the performance on the adapted domain, (3) with negligible additions to compute
-                        costs. In the broader sense, our objectives grounded in a soft token-level alignment pioneer the
-                        exploration of the middle ground between the efficient but narrow exact-match token-level
-                        objectives and expressive but computationally- and resource-intensive sentence-level
-                        objectives.</p>
+                        Meeting of the ACL (ACL 2023): Main track</a>
+                        · 📄 <a href="https://medium.com/@michal-stefanik/training-for-single-correct-prediction-makes-your-model-more-fragile-7e74a09fb4d9">Blog post</a></div>
+                    <p>Fine-tuning of pre-trained generative language models weakens their ability to
+                        generalize, making the open-ended deployment of these models prone to errors like hallucinations
+                        or degradations of output text quality.
+                        In this work, we show that adapting the models with modeling the ambiguity of prediction
+                        can largely avoid over 95% of the loss caused by traditional fine-tuning.
+                    </p>
                         <p><a href="#talks">Conference talk ⬇️</a>️</p>
                 </div>
             </div>
@@ -481,9 +477,11 @@
 
 
             <h3 class="mb-0">Soft Alignment Objectives for Robust Adaptation of Language Generation</h3>
-            <div class="subheading mb-3"><span class="text-primary">ACL 2023 conference in Toronto, Canada, July 2023</span>
+            <div class="subheading mb-3">
+                <span class="text-primary">ACL 2023 conference in Toronto, Canada, July 2023</span>
                 <br></br>
                 <p>A 6 min exposition of our ACL paper proposing more robust training objectives for language generation.</p>
+                <p>There is also a <a href="https://medium.com/@michal-stefanik/training-for-single-correct-prediction-makes-your-model-more-fragile-7e74a09fb4d9">blogpost</a> on the topic</p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/YWHGuichMCA"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
