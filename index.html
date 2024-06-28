@@ -72,15 +72,17 @@
             <p class="lead mb-6">
                 My <strong>research interests</strong> are in everything around <strong>robustness of language
                 models</strong>.
-                This closely relates to <strong>domain adaptation</strong>,
-                <strong>generalization</strong>, <strong>modularization</strong> or applications in
-                <strong>low-resource</strong> settings.
+                This includes a reliable <strong>evaluation</strong> of models' generalization,
+                but also the methods to <strong>improve</strong> models' robustness, for instance,
+                by creating <strong>better data</strong>, or improving existing <strong>training methods</strong>.
+                My research enables better <strong>domain adaptation</strong>,
+                more data-efficient <strong>low-resource</strong> training (e.g. in Machine Translation)
+                or a creation of question-answering systems robust to <strong>prediction shortcuts</strong>.
 
             </p>
             <p class="lead mb-6">
-                Apart from my own research, I am a founder of student <a href="#supervisor">Transformers Club</a>, whose
-                alumni were awarded with
-                several Dean's awards, a SVOC prize or a 1st place in NAACL DADC competition.
+                I am also a founder of student <a href="#supervisor">Transformers Club</a>, whose
+                alumni were awarded with several Dean's awards and prizes from international competitions and shared tasks.
             </p>
             <p class="lead mb-6">
                 Over the last five years, I've also contributed and led the delivery of the <strong>industrial
@@ -89,7 +91,7 @@
                 generation</a>, or
                 <a href="https://www.gaussalgo.com/en/cyber-security/revealing-sensitive-documents-with-ner-practical-case-study">entity
                     recognition</a>,
-                all the way from the research ideas to the scalable, containerized deployments, now daily serving the
+                all the way from the research ideas to the scalable, containerized deployments, nowadays serving the
                 fascinating NLP technologies to end users.
             </p>
             <p class="lead mb-6">
@@ -109,8 +111,33 @@
 
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="flex-grow-1">
+                    <h3 class="mb-0">Self-Training Language Models in Arithmetic Reasoning</h3>
+                    <div class="subheading mb-3">Marek Kadlčík, <span class="text-primary">Michal Štefánik</span> (equal)</div>
+                    <div class="lead mb-3">Presented in
+                        <a href="https://openreview.net/forum?id=zBh79GuLNO">ICLR 2024 LLMAgents workshop</a>
+                        & <a href="https://drive.google.com/file/d/1UMTW_B6dpx2jH9V-zXLo6yCQ8QnUiH2j/view">newer version</a> under review.
+                    </div>
+                    <p>Language models achieve impressive results in tasks involving complex multistep reasoning,
+                        but scaling these capabilities further traditionally requires expensive collection of more
+                        annotated data. In this work, we explore the potential of improving the capabilities of
+                        language models using automated feedback based on the validity of their predictions in
+                        arithmetic reasoning (self-training).
+                    </p>
+                    <p>
+                        We find that models can substantially improve in both single-round (offline) and online
+                        self-training. In the offline setting, supervised methods are able to deliver gains
+                        comparable to preference optimization, but in online self-training, preference optimization
+                        shows to largely outperform supervised training thanks to superior stability and robustness
+                        on unseen types of problems.
+                    </p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
                     <h3 class="mb-0">Concept-aware Data Construction Improves In-context Learning of Language Models</h3>
-                    <!--                    <div class="subheading mb-3"><span class="text-primary">Michal Štefánik</span>, Marek Kadlčík</div>-->
+                    <div class="subheading mb-3"><span class="text-primary">Michal Štefánik</span>, Marek Kadlčík, Petr Sojka
+                    </div>
                     <div class="lead mb-3">To appear in Findings of ACL 2024 · <a href="https://arxiv.org/abs/2403.09703">Pre-print</a>
                         · 📄 <a href="https://michal-stefanik.medium.com/what-makes-a-language-model-to-understand-your-instruction-d0ce384930a2">Blog post</a>.
                     </div>
@@ -143,13 +170,16 @@
                     <p>In this paper, we challenge the commonly-used evaluation of robustness of language models through
                         the lens of their out-of-distribution performance. We propose a metric to measure the reliance of
                         model's performance on a specific feature and measure the reliance on a set of features identified as
-                        prediction shortcuts. We find that the same prediction shortcuts are exposed in all assessed QA datasets,
+                        prediction shortcuts.
+                    </p>
+                    <p>
+                        We find that the same prediction shortcuts are exposed in all assessed QA datasets,
                         whereas some shortcuts identified in SQuAD are even more impactful in other datasets.
                         This means that counterintuitively, a model relying on shortcut more might reach better OOD performance.
                         Finally, we survey three existing debiasing methods and find that indeed, the OOD gains of these methods
                         come in hand with increased, rather than decreased reliance on fragile prediction shortcuts.
                     </p>
-                    <p><a href="#talks">Conference talk ⬇️</a>️</p>
+                    <p><a href="#eacl24_talk">Conference talk ⬇️</a>️ & <a href="#dadc_results">Announcement of results in NAACL DADC ⬇️</a>️</p>
                 </div>
             </div>
 
@@ -168,6 +198,8 @@
                         To enable language models to circumvent this deficiency and offload a critical computation to a
                         symbolic system, we create a collection of Calc-X datasets that demonstrate the appropriate use
                         of a calculator in reasoning chains.
+                    </p>
+                    <p>
                         We survey and unify several existing chain-of-thought datasets into a proposed novel format,
                         resulting in a standard collection of over 300,000 samples requiring arithmetic reasoning.
                         Finally, we use the new collection to train open-source calculator-assisted language models and
@@ -177,7 +209,7 @@
                         and <a href="https://huggingface.co/collections/MU-NLPC/calcformers-65367392badc497807b3caf5">models</a>
                         publicly available</a>.
                     </p>
-                    <p>Link to <a href="https://aclanthology.org/2023.emnlp-main.742.mp4">Marek's Conference talk 🎥</a></p>
+                    <p>Link to <a href="https://aclanthology.org/2023.emnlp-main.742.mp4">Marek's EMNLP talk 🎥</a></p>
                 </div>
             </div>
 
@@ -189,6 +221,8 @@
                     <div class="lead mb-3">In <a href="https://arxiv.org/abs/2212.01692">Proceedings of ACL 2023 Natural Language Reasoning (NLRSE) workshop</a> · 🥇 Best paper award</div>
                     <p>Recent work analysing the functioning of in-context learners show that instead of learning new associations from the input,
                         models largely rely on their pre-trained knowledge, such as the sentiment of the labels.
+                    </p>
+                    <p>
                         We argue that evaluations using a randomly-chosen demonstrations can not disentangle models' reliance on pre-trained knowledge
                         from the ability to learn new functional relations, as most of such demonstrations can provide only limited information.
                         Hence, we propose to evaluate in-context learners with demonstrations sharing a specific, informative reasoning concept with predicted sample.
@@ -210,10 +244,12 @@
                     <p>Fine-tuning of pre-trained generative language models weakens their ability to
                         generalize, making the open-ended deployment of these models prone to errors like hallucinations
                         or degradations of output text quality.
+                    </p>
+                    <p>
                         In this work, we show that adapting the models with modeling the ambiguity of prediction
                         can largely avoid over 95% of the loss caused by traditional fine-tuning.
                     </p>
-                        <p><a href="#talks">Conference talk ⬇️</a>️</p>
+                        <p><a href="#soft_align_talk">Conference talk ⬇️</a>️</p>
                 </div>
             </div>
 
@@ -233,6 +269,8 @@
                         we evaluate a set of the most recent in-context learners and compare their results to the
                         supervised baselines. Finally, we train, evaluate and publish a set of in-context learning
                         models.
+                    </p>
+                    <p>
                         We find that the massive multitask training can be outperformed by single-task training in the
                         target language, uncovering the potential for specializing in-context learners to the
                         language(s) of their application.
@@ -247,7 +285,7 @@
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="flex-grow-1">
                     <h3 class="mb-0">Applications of deep language models for reflective writings</h3>
-                    <div class="subheading mb-3">Jan Nehyba*, <span class="text-primary">Michal Štefánik</span>* (*equal)
+                    <div class="subheading mb-3">Jan Nehyba, <span class="text-primary">Michal Štefánik</span> (equal)
                     </div>
                     <div class="lead mb-3">In <a href="https://rdcu.be/cUWGY">Education and Information Technologies</a>
                     (IF 5.5)</div>
@@ -255,6 +293,8 @@
                         problems, whose resolution relies on often subjective expert judgements.
                         One of such problems that we study in this work is a
                         reflection analysis in the writings of student teachers.
+                    <p>
+                    </p>
                         We perform a variety of experiments on how to efficiently address data collection for applications
                         exhibiting a great level of annotators' subjectivity.
                         Additionally, we demonstrate a great potential in a cross-lingual transfer of multilingual language models
@@ -272,12 +312,15 @@
                     <p>Despite their outstanding performance, large language models (LLMs) suffer notorious flaws
                         related to their preference for simple, surface-level textual relations over full semantic
                         complexity of the problem. This proposal investigates a common denominator of this problem in
-                        their weak ability to generalise outside of the training domain. We survey diverse research
+                        their weak ability to generalise outside the training domain.
+                    </p>
+                    <p>
+                        We survey diverse research
                         directions providing estimations of model generalisation ability and find that incorporating
                         some of these measures in the training objectives leads to enhanced distributional robustness of
                         neural models. Based on these findings, we present future research directions towards enhancing
                         the robustness of LLMs.</p>
-                    <p><a href="#talks">Conference talk ⬇️</a>️</p>
+                    <p><a href="#srw_talk">Conference talk ⬇️</a>️</p>
                 </div>
             </div>
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -294,7 +337,7 @@
                         benefit from enhanced objective-centric experimentation in multitask training, custom objectives
                         development, dynamic training curricula, or domain adaptation and demonstrate the practical
                         applicability of Adaptor in selected unsupervised domain adaptation scenarios.</p>
-                    <p><a href="#talks">Introduction talk ⬇️</a>️</p>
+                    <p><a href="#adaptor_talk">Introduction talk ⬇️</a>️</p>
                 </div>
             </div>
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -325,7 +368,10 @@
                         · 🥇 <a href="https://aclanthology.org/2021.wmt-1.73v3.pdf#page=10">Best-performing reference-free metric</a></div>
                     <p>This work introduces a simple regressive ensemble for evaluating machine translation quality
                         based on a set of novel and established metrics. We evaluate the ensemble using a correlation to
-                        expert-based MQM scores of the WMT 2021 Metrics workshop. In both monolingual and zero-shot
+                        expert-based MQM scores of the WMT 2021 Metrics workshop.
+                    </p>
+                    <p>
+                        In both monolingual and zero-shot
                         cross-lingual settings, we show a significant performance improvement over single metrics. In
                         the cross-lingual settings, we also demonstrate that an ensemble approach is well-applicable to
                         unseen languages. Furthermore, we identify a strong reference-free baseline that consistently
@@ -347,6 +393,8 @@
                     <p>ARQMath Community Question Answering (CQA) competition challenges open-domain QA systems to find answers to a set of
                         yet non-answered questions on Math Stack Exchange, potentially
                         providing users with responses to all new but answerable questions.
+                    </p>
+                    <p>
                         In our submission, we create an ensemble of ten “weak” individual systems
                         that we let vote to provide answers to unseen questions. Our submission, a best-performing among
                         all the automated systems, shows that such ensemble approach can be more robust
@@ -449,11 +497,11 @@
     </section>
     <hr class="m-0"/>
     <!-- Talks -->
-    <section class="resume-section" id="talks">
+    <section class="resume-section">
         <div class="resume-section-content">
             <h2 class="mb-5">Talks</h2>
 
-            <h3 class="mb-0">Think Twice: Measuring the Efficiency of Eliminating Prediction Shortcuts of Question Answering Models</h3>
+            <h3 id="eacl24_talk" class="mb-0">Think Twice: Measuring the Efficiency of Eliminating Prediction Shortcuts of Question Answering Models</h3>
             <div class="subheading mb-3"><span class="text-primary">EACL 2024 Main conference talk in Malta, March 2024</span>
                 <br></br>
                 <p>A 12 min overview of our work exploring the limits of evaluating robustness of language models in Question answering.</p>
@@ -476,7 +524,7 @@
             </div>
 
 
-            <h3 class="mb-0">Soft Alignment Objectives for Robust Adaptation of Language Generation</h3>
+            <h3 class="mb-0" id="soft_align_talk">Soft Alignment Objectives for Robust Adaptation of Language Generation</h3>
             <div class="subheading mb-3">
                 <span class="text-primary">ACL 2023 conference in Toronto, Canada, July 2023</span>
                 <br></br>
@@ -531,7 +579,7 @@
             </div>
 
 
-            <h3 class="mb-0">Mitigating Biases of QA Models by Simple Resampling Methods</h3>
+            <h3 id="dadc_results" class="mb-0">Mitigating Biases of QA Models by Simple Resampling Methods</h3>
             <div class="subheading mb-3"><span class="text-primary">2022 Annual Conference of the NAACL: DADC Workshop, July 2022</span>
                 <br></br>
                 <p>Results announcement and recording of Supersamplers' team presentation, live on NAACL 2022
@@ -544,7 +592,7 @@
             </div>
 
 
-            <h3 class="mb-0">Methods for Estimating and Improving Robustness of Language Models</h3>
+            <h3 id="srw_talk" class="mb-0">Methods for Estimating and Improving Robustness of Language Models</h3>
             <div class="subheading mb-3"><span
                     class="text-primary">NAACL 2022: SRW workshop, July 2022</span>
                 <br></br>
@@ -556,7 +604,7 @@
                 <br></br>
             </div>
 
-            <h3 class="mb-0">Adaptor: Objective-Centric Adaptation Library for Language Models</h3>
+            <h3 id="adaptor_talk" class="mb-0">Adaptor: Objective-Centric Adaptation Library for Language Models</h3>
             <div class="subheading mb-3"><span class="text-primary">60th Annual Meeting of the ACL, May 2022</span>
 
                 <br></br>
