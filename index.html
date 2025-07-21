@@ -108,6 +108,91 @@
                 An overview of my research can now also be found in my <a href="https://is.muni.cz/th/m805b/PhD_thesis_Michal_Stefanik.pdf">dissertation</a> 📄
             </p>
             </br>
+            <h3 class="mb-2"><span class="text-primary">2025</span></h3>
+
+           <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Pre-trained Language Models Learn Remarkably Accurate Representations of Numbers</h3>
+                    <div class="subheading mb-3">Marek Kadlčík, <span class="text-primary">Michal Štefánik</span>, Timothee Mickus, Michal Spiegel, Josef Kuchař
+                    </div>
+                    <div class="lead mb-3">Under review, <a href="https://arxiv.org/abs/2506.08966">Link to pre-print</a>.
+                    </div>
+                    <p>Language models are known to make mistakes in operations involving numbers.
+                        This raises an assumption that their distributionally-learnt representations of numbers may be
+                        highly inaccurate with respect to actual numeric values.
+                    </p>
+                    <p>
+                        In this work, we first find that learned input embeddings of language models follow a systematic,
+                        distinct sinusoidal pattern. Subsequently, we develop a new probing method that is better suited
+                        for this pattern than commonly-used linear probes and contrary to previous work, we show that
+                        the numeric representations created in pre-training are surprisingly accurate -- reaching up to
+                        100% of accuracy (Llama 3.1 8B) in distinguishing different integer values.
+                    </p>
+                </div>
+            </div>
+
+
+           <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Can Out-of-Distribution Evaluations Uncover Reliance on Prediction Shortcuts? A Case Study in Question Answering</h3>
+                    <div class="subheading mb-3"><span class="text-primary">Michal Štefánik</span>, Timothee Mickus, Marek Kadlčík, Michal Spiegel, Josef Kuchař
+                    </div>
+                    <div class="lead mb-3">Under review, <a href="https://drive.google.com/file/d/14OzgTQ9IvmKB7IgTW6PYoFUBYUeyWq6a/view?usp=sharing">Link to pre-print</a>.
+                    </div>
+                    <p>Out-of-distribution (OOD) evaluations are a go-to standard for evaluating models' generalization.
+                        In this work, we look at a specific case of Question Answering, where previous work documents
+                        a representative sample of prediction shortcuts, presenting an alternative way of assessing
+                        models' generalization.
+                    </p>
+                    <p>
+                        In the case of Question Answering, we find that the (i) OOD performance and (ii) the reliance on shortcuts, both
+                        assessing models' generalization, are vastly uncorrelated. This is due to the fact
+                        that different OOD datasets share the same shortcuts, underlining blind spots of OODs'
+                        generalization assessments.
+                        Nevertheless, we also show that the relationship of datasets and shortcuts is more complex:
+                        even datasets good for training shortcut-free models can provide biased evaluation
+                        (and vice versa).
+                    </p>
+                </div>
+            </div>
+
+           <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Attend or Perish: Benchmarking Attention in Algorithmic Reasoning</h3>
+                    <div class="subheading mb-3">Michal Spiegel,
+                        <span class="text-primary">Michal Štefánik</span>, Marek Kadlčík, Josef Kuchař
+                    </div>
+                    <div class="lead mb-3">Under review, <a href="https://arxiv.org/abs/2412.17933">Link to pre-print</a>.
+                    </div>
+                    <p>In this work, we study To what extent can Language Models comprehend and apply an *algorithm* underlying the training data.
+                       We construct an interpretability benchmark with annotated reference attention maps, based on which,
+                        we assess to what extent can different Transformers follow the robust, reference attention patterns in out-of-distribution settings.
+                    </p>
+                    <p>
+                        We find that language models struggle to systematically generalize underlying algorithms and via interventional experiment,
+                        we show that their Attention mechanism presents a key bottleneck in models' generalization capabilities.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">BenCzechMark: A Czech-centric Multitask and Multimetric Benchmark
+                        for Large Language Models with Duel Scoring Mechanism</h3>
+                    <div class="subheading mb-3">Martin Fajcik, Martin Docekal, Jan Dolezal, Karel Ondrej, Karel Beneš, Jan Kapsa, Pavel Smrz, Alexander Polok, Michal Hradis, Zuzana Neverilova, Ales Horak, Radoslav Sabol,
+                        <span class="text-primary">Michal Štefánik</span>, Adam Jirkovsky, David Adamczyk, Petr Hyner, Jan Hula, Hynek Kydlicek (alphabetical+institution ordering)
+                    </div>
+                    <div class="lead mb-3">To Appear in <a href="https://arxiv.org/abs/2412.17933">Transactions of ACL</a>.
+                    </div>
+                    <p>To foster research in lower-resource languages, we present BenCzechMark, the first comprehensive
+                        Czech language benchmark encompassing 50 challenging, culturally-dependent tasks from 8 categories.
+                        In addition, inspired by social preference theory, we propose and implement a new duel scoring system for language models that can provide more reliable assessment of models ranking.
+                    </p>
+                </div>
+            </div>
+
+
             <h3 class="mb-2"><span class="text-primary">2024</span></h3>
 
             <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
