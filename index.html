@@ -15,6 +15,26 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css"/>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet"/>
+    <style>
+        /* Awards: date, medal and text as three aligned columns */
+        .award-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .award-list li {
+            display: grid;
+            grid-template-columns: 6.5rem 2rem 1fr;
+            margin-bottom: 0.6rem;
+        }
+        .award-list .award-medal {
+            text-align: center;
+        }
+        @media (max-width: 575.98px) {
+            .award-list li {
+                grid-template-columns: 5rem 1.6rem 1fr;
+            }
+        }
+    </style>
 </head>
 <body id="page-top">
 <!-- Navigation-->
@@ -31,11 +51,11 @@
         <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Research</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#talks">Talks</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#other">Other</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#afk">Other other</a></li>
-            <!--                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>-->
         </ul>
     </div>
 </nav>
@@ -80,13 +100,12 @@
                 One entry point to these questions is <strong>mathematical reasoning</strong>, where my work studies how language models
                 <a href="https://aclanthology.org/2024.findings-emnlp.721/">acquire</a>,
                 <a href="https://aclanthology.org/2025.emnlp-main.1356/">represent</a>, and
-                <a href="https://arxiv.org/abs/2510.26285">use</a> abstract numeric structure.
+                <a href="https://aclanthology.org/2026.acl-long.1415/">use</a> abstract numeric structure.
                 My previous work, presented at highly selective *ACL conferences, also delivers better models for
                 <a href="https://aclanthology.org/2023.acl-long.492/">low-resource</a> applications,
                 reasoning models able to <a href="https://aclanthology.org/2024.findings-acl.733/">rapidly adapt</a>,
                 or instructional models that are <a href="https://ar5iv.org/abs/2305.06841">robust to prediction shortcuts</a>.
-                My research was recognised by several awards (see below),
-                e.g. recently by Summa Cum Laude and Prorector's Award for my <a href="https://is.muni.cz/th/m805b/?lang=en">dissertation thesis</a>.
+                My research was recognised by several <a href="#awards">awards</a> including an Informatics Europe Award for my <a href="https://is.muni.cz/th/m805b/?lang=en">dissertation thesis</a>.
             </p>
             <p class="lead mb-6">
                 I am a proud founder and leader of <a href="#supervisor">TransformersClub</a>™, a platform for supporting students
@@ -121,12 +140,36 @@
 
            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                 <div class="flex-grow-1">
+                    <h3 class="mb-0">AIMO Interpretability Challenge</h3>
+                    <div class="subheading mb-3">
+                        <span class="text-primary">Michal Štefánik</span>, Philipp Mondorf, Andreas Waldis, Qianying Liu,
+                        Chuan Yang, Michal Spiegel, Josef Kuchař, Marek Kadlčík, Adam Vawda-Oomerjee, Chaoran Liu,
+                        Simon Frieder, Barbara Plank, Fazl Barez, Pontus Stenetorp
+                    </div>
+                    <div class="lead mb-3">NeurIPS 2026 Competition; <a href="https://arxiv.org/abs/2607.13899">pre-print</a>.
+                    </div>
+                    <p>Standard benchmarks tell us whether a model solves olympiad-level maths problems, but not whether
+                        it does so through stable reasoning mechanisms or brittle reasoning shortcuts. This competition
+                        asks participants to tell these two apart by looking inside the models.
+                    </p>
+                    <p>
+                        Building on the resources of the Fields Model Initiative, we provide participants with
+                        newly-published problems, their symbolic versions allowing to generate perturbed variants,
+                        access to frontier reasoning models, and robustness evaluations. The resulting methods for
+                        identifying robust problem-solving will be released as an open-source tools to interpretability
+                        and generalisation communities.
+                    </p>
+                </div>
+           </div>
+
+           <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
                     <h3 class="mb-0">Language Models Learn Universal Representations of Numbers and Here's Why You Should Care</h3>
                     <div class="subheading mb-3">
                         <span class="text-primary">Michal Štefánik</span>*, Timothee Mickus*, Marek Kadlčík*, Bertram Højer, Michal Spiegel, Raúl Vázquez, Aman Sinha, Josef Kuchař, Philipp Mondorf
                         (*core)
                     </div>
-                    <div class="lead mb-3">Proceedings of ACL 2026: Main track; <a href="https://arxiv.org/abs/2510.26285">pre-print</a>.
+                    <div class="lead mb-3">In <a href="https://aclanthology.org/2026.acl-long.1415/">Proceedings of ACL 2026: Main track</a> and <a href="https://openreview.net/forum?id=JHrmWxNQj5">ICML 2026 Mechanistic Interpretability Spotlight</a>.
                     </div>
                     <p>By analyzing how LLMs decode numbers, we develop better tools for extracting ordinal information
                         from language models. We show that diverse models represent ordinal information in a universal,
@@ -560,6 +603,74 @@
             </div>
 
 
+        </div>
+    </section>
+    <hr class="m-0"/>
+
+    <!-- Awards-->
+    <section class="resume-section" id="awards">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Awards</h2>
+            <ul class="award-list">
+                <li>
+                    <span class="award-date text-primary">Aug 2026</span>
+                    <span class="award-medal">🎖</span>
+                    <span>Selected for a <strong>Runner-Up</strong> Award of the <strong>Informatics
+                    Europe Best Dissertation Award</strong>.</span>
+                </li>
+                <li>
+                    <span class="award-date text-primary">Oct 2025</span>
+                    <span class="award-medal">🏆</span>
+                    <span>Received a <strong>Prorector's Award</strong> for Outstanding PhD Research.</span>
+                </li>
+                <li>
+                    <span class="award-date text-primary">May 2025</span>
+                    <span class="award-medal">🏆</span>
+                    <span>Received a <strong>Dean's PhD Award</strong> for the defended dissertation
+                    thesis (~5% of defended).</span>
+                </li>
+                <li>
+                    <span class="award-date text-primary">Feb 2025</span>
+                    <span class="award-medal">🏅</span>
+                    <span>Honoured with the <strong>Summa Cum Laude</strong> for the defended dissertation
+                    thesis (2–5% of defended).</span>
+                </li>
+                <li>
+                    <span class="award-date text-primary">Nov 2024</span>
+                    <span class="award-medal">🎖</span>
+                    <span>Named <strong>Outstanding Reviewer Award</strong> at EMNLP 2024.</span>
+                </li>
+                <li>
+                    <span class="award-date text-primary">Apr 2024</span>
+                    <span class="award-medal">🎖</span>
+                    <span>Named <strong>Outstanding PhD Researcher</strong> by the Research Board of the
+                    Faculty of Informatics, Masaryk University.</span>
+                </li>
+                <li>
+                    <span class="award-date text-primary">Jul 2023</span>
+                    <span class="award-medal">🥇</span>
+                    <span>First author of the <strong>Best paper</strong> at ACL 2023 NLRSE workshop
+                    (among 12 accepted).</span>
+                </li>
+                <li>
+                    <span class="award-date text-primary">May 2023</span>
+                    <span class="award-medal">🥇</span>
+                    <span>First author of the <strong>Best paper</strong> at EACL 2023 SlavicNLP workshop
+                    (among 26 accepted).</span>
+                </li>
+                <li>
+                    <span class="award-date text-primary">Jul 2022</span>
+                    <span class="award-medal">🥇</span>
+                    <span>First co-author of the <strong>winning submission</strong> in the NAACL DADC:
+                    Better Training Data challenge.</span>
+                </li>
+                <li>
+                    <span class="award-date text-primary">Nov 2021</span>
+                    <span class="award-medal">🥇</span>
+                    <span>First author of the <strong>best-performing metric</strong> at the WMT 2021
+                    Metrics shared task (among 18 submissions).</span>
+                </li>
+            </ul>
         </div>
     </section>
     <hr class="m-0"/>
